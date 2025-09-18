@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile - Faculty of science and Technology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7dbac2;
+            color: #131212;
+            display: flex;
+        }
+
+         /* Sidebar */
+    .sidebar {
+      width: 220px;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    .sidebar ul li a {
+      color: #fdfdfd;
+      text-decoration: none;
+    }
+    .sidebar ul li.active {
+      color: #f5f4f5;
+    }
+    .sidebar ul li a:hover {
+      color: #d1c4a5;
+    }
+
+        .main {
+            margin-left: 200px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top navigation */
+        nav {
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: rgb(1, 19, 13);
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for profile */
+        .container {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-header {
+            color: rgb(27, 27, 27);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-header h2 {
+            margin: 10px 0 5px 0;
+        }
+
+        .profile-header p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .profile-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .profile-content .info, .profile-content .actions {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+
+        .profile-content h3 {
+            margin-top: 0;
+        }
+
+        .profile-content p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .actions button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            color: rgb(31, 29, 29);
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .actions button:hover {
+            background-color: #357abd;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                position: relative;
+            }
+            .main {
+                margin-left: 0;
+            }
+            nav {
+                text-align: center;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+            .profile-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main">
+        <!-- Top Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Profile Container -->
+        <div class="container">
+            <div class="profile-header">
+                <h2>Nsamba Fred</h2>
+                <p>Student at Muteesa I Royal University</p>
+            </div>
+
+            <div class="profile-content">
+                <div class="info">
+                    <h3>Personal Information</h3>
+                    <p><strong>Email:</strong> fred@gmail.com</p>
+                    <p><strong>Phone:</strong> +256 708648613</p>
+                    <p><strong>Department:</strong> Information Technology</p>
+                    <p><strong>Year:</strong> 1st Year</p>
+                </div>
+
+                <div class="actions">
+                    <h3>Actions</h3>
+                    <button>Edit Profile</button>
+                    <button>Change Password</button>
+                    <button>Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

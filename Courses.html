@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faculty of Science and Technology - Courses</title>
+  <link rel="stylesheet" href="Courses.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #6991b9;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px 0;
+    }
+    .sidebar h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sidebar ul li.active,
+    .sidebar ul li:hover {
+      background: #34495e59;
+    }
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      width: 100%;
+      display: block;
+    }
+    .main-content {
+      margin-left: 220px;
+      padding: 20px 40px;
+      flex: 1;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    header a {
+      color: rgb(9, 155, 70);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #1f4e79;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #7bb2e6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>MRU Dashboard</h2>
+    <ul>
+      <li class="active"><a href="#">Dashboard</a></li>
+       <li><a href="Courses.html">Courses</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="Profile.html">Profile</a></li>
+    </ul>
+  </aside>
+  <div class="main-content">
+    <header>
+      <a href="about.html">About</a>
+     <a href="contact.html">Contact</a>
+    </header>
+
+    <h1>Faculty of Science and Technology - Courses</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Course Code</th>
+          <th>Course Name</th>
+          <th>Credits</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>CS101</td>
+          <td>Principles of Programming</td>
+          <td>4</td>
+          <td>Ssalongo Kyasanku Shaban</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ICT101</td>
+          <td>Information Systems</td>
+          <td>3</td>
+          <td>Mr. Nyanzi Abubakur</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>ICT011</td>
+          <td>Discrete Math</td>
+          <td>4</td>
+          <td>Mr. Matovu David</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>ICT120</td>
+          <td>Computer Literacy</td>
+          <td>3</td>
+          <td>Mr. Shaban</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>ICT110</td>
+          <td>Website Design and Internet Technology</td>
+          <td>4</td>
+          <td>Mr. Matovu David</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
